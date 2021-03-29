@@ -37,7 +37,6 @@ export const HomeScreen = ({navigation}) => {
       <MapView
         style={{...StyleSheet.absoluteFillObject}}
         provider={PROVIDER_GOOGLE}
-        onCalloutPress={() => console.log('iam here')}
         region={{
           latitude: location.latitude,
           longitude: location.longitude,

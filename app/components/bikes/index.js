@@ -1,10 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import {Icon, Button} from 'react-native-elements';
 import Toast from 'react-native-simple-toast';
 
 const Bikes = ({item}) => (
   <View style={styles.bikeContainer}>
+    <Image
+      style={styles.cycleImage}
+      resizeMode="cover"
+      source={require('../../../assets/images/cycle-1.jpg')}
+    />
     <Text>Name: {item.name}</Text>
     <Text>Battery: {item.battery}%</Text>
     <Text>Availabile: {item.availability ? 'Yes' : 'No'}</Text>
@@ -37,6 +42,10 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     marginTop: 10,
+  },
+  cycleImage: {
+    width: 350,
+    height: 250,
   },
 });
 
