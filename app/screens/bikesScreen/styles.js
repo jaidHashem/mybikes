@@ -5,6 +5,7 @@ export default StyleSheet.create({
     flex: 1,
   },
   topBarContainer: {
+    marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
   },
